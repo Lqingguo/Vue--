@@ -1,0 +1,475 @@
+@import "reset.css"
+@import "mixins.styl"
+#warp
+  background #f5f5f5
+  #content
+    width 100%
+    section
+      display none
+      &.on
+        display block
+      .section1
+        .header1
+          z-index 10
+          position fixed
+          top 0
+          left 0
+          width 100%
+          height 45px
+          text-align center
+          background #02a774
+          .search1
+            position absolute
+            left 15px
+            top 50%
+            width 10%
+            height 50%
+            transform translateY(-50%)
+            .icon-sousuo
+              font-size 25px
+              color #fff
+          .location
+            position absolute
+            left 50%
+            top 50%
+            transform translate(-50%,-50%)
+            width 50%
+            color #ffffff
+            text-align center
+            margin-left -5%
+            .site
+              display block
+              font-size 20px
+              color #ffffff
+          .register
+            position absolute
+            right 15px
+            top 50%
+            transform translateY(-50%)
+            color #ffffff
+            font-size 14px
+            .spanregister
+              color #ffffff
+        .swiper-container
+          background #ffffff
+          margin-top 45px
+          height 200px
+          width 100%
+          .swiper-pagination-bullet-active
+            background #02a774
+          .swiper-wrapper
+            background #ffffff
+            height 200px
+            .swiper-slide
+              height 100%
+              clearFix()
+              li
+                float left
+                width 25%
+                display flex
+                flex-direction column
+                align-items center
+                img
+                  width 50%
+                  height 50%
+                  margin 10px 0
+
+        .shop
+          margin-bottom 50px
+          top-border-1px(#ccc)
+          margin-top 10px
+          width 100%
+          background #ffffff
+          .shopheader
+            position relative
+            height 30px
+            padding 10px 10px 0
+            span
+              color: #999
+              line-height 20px
+              font-size 14px
+              position absolute
+              left 32px
+              top 10px
+          .shopcontent
+            .shoplist
+              .shopli
+                top-border-1px(#ccc)
+                width 100%
+                a
+                  display block
+                  box-sizing border-box
+                  padding 15px 8px
+                  width 100%
+                  .shopleft
+                    float left
+                    width 23%
+                    height 75px
+                    box-sizing border-box
+                    padding-right 10px
+                    img
+                      display block
+                      width 100%
+                      height 100%
+                   .shopright
+                     float right
+                     width 77%
+                     .shopT
+                       width 100%
+                       .shopTh4
+                         float left
+                         width 140px
+                         color #333
+                         font-size 16px
+                         line-height 16px
+                         font-weight 700
+                         .pinpai
+                           font-size 11px
+                           line-height 14px
+                           color #333333
+                           background-color #ffd930
+                           padding 2px 2px
+                           border-radius 2px
+                           margin-right 5px
+                           float left
+
+
+                       .shopul
+                         float right
+                         margin-top 3px
+                         .shopulli
+                           float: left
+                           font-size 10px
+                           color #999999
+                           border 1px solid #f1f1f1
+                           padding 0 2px
+                           border-radius 2px
+
+
+
+                     .shopmiddle
+                       position relative
+                       width 100%
+                       margin-top 18px
+                       margin-bottom 8px
+                       .middleleft
+                         float left
+                         .grade
+                           float left
+                           font-size 10px
+                           margin-left 4px
+                         .volume
+                           float left
+                           font-size 10px
+                           color #000
+                           transform scale(0.8)
+                         .starts
+                           float left
+                           font-size 0px
+                           .start
+                             float left
+                             display inline-block
+                             width 10px
+                             height 10px
+                             margin-right 3px
+                             background-size 10px 10px
+                             &.on
+                               bg-image('../images/stars/star24_on')
+                             &.off
+                               bg-image('../images/stars/star24_off')
+                             &.half
+                               bg-image('../images/stars/star24_half')
+
+
+
+
+                       .middleright
+                         position absolute
+                         right 0px
+                         top 0px
+                         .zhuansong
+                           display inline-block
+                           color #ffffff
+                           margin-right -10px
+                           background-color #02a774
+                           border 1px solid #02a774
+                           transform-origin: 35px 0;
+                           transform: scale(0.7);
+                           display: inline-block;
+                           font-size: 12px;
+                           padding: 1px;
+                           float right
+                           border-radius: 2px;
+                         .zhunshi
+                           color #ffffff
+                           border 1px solid #02a774
+                           transform-origin: 35px 0;
+                           transform: scale(0.7);
+                           display: inline-block;
+                           font-size: 12px;
+                           padding: 1px;
+                           float right
+                           border-radius: 2px;
+                           background #02a774
+
+
+
+                     .shopB
+                       transform scale(0.8)
+                       float left
+                       transform-origin 0
+
+
+
+
+
+
+      .section2
+        width 100%
+        height 800px
+        .header2
+          z-index 10
+          position fixed
+          top 0
+          left 0
+          width 100%
+          height 45px
+          line-height 45px
+          text-align center
+          background #02a774
+          font-size 23px
+          color  white
+        .search
+          background #ffffff
+          padding 12px 8px
+          margin-top 45px
+          .input1
+            float: left;
+            width: 79%;
+            border: 4px solid #f2f2f2;
+            font-size: 14px;
+            color: #333;
+            background-color: #f2f2f2;
+            height: 35px;
+            padding: 0 4px;
+            border-radius: 2px;
+            font-weight: bold;
+            outline: none;
+          .input2
+            float: right;
+            width: 18%;
+            border: 4px solid #02a774;
+            font-size: 16px;
+            color: #fff;
+            background-color: #02a774;
+            height: 35px;
+            padding: 0 4px;
+            border-radius: 2px;
+            font-weight: bold;
+            outline: none;
+
+      .section3
+        width 100%
+        .header3
+          z-index 10
+          position fixed
+          top 0
+          left 0
+          width 100%
+          height 45px
+          line-height 45px
+          text-align center
+          background #02a774
+          font-size 23px
+          color  white
+        .gologing
+          padding-top 140px
+          width 60%
+          margin 0 auto
+          text-align center
+          img
+            height 225px
+            width 225px
+          .golo
+            p
+              padding 10px 0
+              font-size 17px
+              color: #6a6a6a
+            button
+              display inline-block
+              background #02a774
+              font-size 14px
+              color #ffffff
+              outline none
+              border-radius 5px
+              padding 10px 20px
+
+      .section4
+        width 100%
+        .header4
+          z-index 10
+          position fixed
+          top 0
+          left 0
+          width 100%
+          height 45px
+          line-height 45px
+          text-align center
+          background #02a774
+          font-size 23px
+          color  white
+        .myTop
+          margin-top 45.5px
+          height 100px
+          .myA
+            color black
+            display block
+            position relative
+            background #02a774
+            padding 20px 10px
+            p
+              font-weight: 700;
+              font-size: 18px;
+              color: #ffffff;
+            .myLeft
+              .myImg
+                float left
+                vertical-align top
+                width 60px
+                height 60px
+                overflow hidden
+                border-radius 50%
+                background #999999
+                i
+                  font-size 62px
+                  background-color #e4e4e4
+              .mytext
+                float left
+                margin-top 8px
+                margin-left 15px
+                .myLT
+                  padding-bottom 8px
+                .myLB
+                  .myI
+                    display inline-block
+                    margin-left -15px
+                    margin-right 5px
+                    width 20px
+                    height 20px
+                    .tu
+                      font-size 30px
+                      vertical-align text-top
+                    .pshouji
+                      float left
+                  .mys
+                    font-size 14px
+
+
+            .myRight
+              width 12px
+              height: 12px
+              position absolute
+              right 15px
+              top 40px
+              i
+                font-size 5px
+                color #ffffff
+        .myList
+          position relative
+          width 100%
+          background #ffffff
+          overflow hidden
+
+          .myula
+            display inline-block
+            float left
+            width 33%
+            text-align center
+            border-right 1px solid #f1f1f1
+            .money
+              display: inline-block
+              margin 15px 5px 10px
+              width 100%
+              font-size 14px
+              color #333333
+              span
+                display inline-block
+                font-size 30px
+                color #ffd930
+                font-weight 700
+                line-height 30px
+            .money1
+              span
+                color red
+            .money2
+              span
+                color blue
+            .wenben
+              display inline-block
+              color #6a6a6a
+              padding-bottom 10px
+
+
+
+        .myBottom
+          margin-top 10px
+          position relative
+          background #ffffff
+          .myBoa
+            bottom-border-1px(#ccc)
+            display flex
+            align-items center
+            padding-left 15px
+            .iconspan
+              display flex
+              align-items center
+              font-size 30px
+              width 20px
+              height 20px
+              .iconfont
+                font-size 30px
+                margin-left -10px
+
+            .leftspan
+              width 100%
+              border-radius 1px solid #f1f1f1
+              padding 18px 10px 18px 0
+              font-size 16px
+              color: #333
+              display flex
+              justify-content: space-between;
+              .jiantoua
+                position absolute
+                right 10px
+                bottom 25px
+                width 10px
+                height 10px
+
+
+
+          .lastone
+            margin-top 10px
+
+  footer
+    background #ffffff
+    top-border-1px(#ccc)
+    height 50px
+    width 100%
+    position fixed
+    bottom 0
+    display flex
+    z-index 100
+    .guide-item
+      flex 1
+      flex-direction column
+      align-items center
+      display flex
+      span:first-child
+        .iconfont
+          font-size 26px
+        margin 5px 0
+      span:last-child
+        font-size 14px
+      &.active
+        color #02a774
+
